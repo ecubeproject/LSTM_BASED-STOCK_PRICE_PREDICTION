@@ -25,7 +25,7 @@ dropout = st.sidebar.slider("Dropout Rate", min_value=0.0, max_value=0.5, step=0
 optimizer = st.sidebar.selectbox("Optimizer", options=["adam", "rmsprop"], index=0)
 
 # ------------------ Main Title ------------------
-st.title("📈 LSTM-Based Stock Price Predictor")
+st.title("LSTM-Based Stock Price Predictor")
 
 # ------------------ Load and preprocess data ------------------
 @st.cache_data
