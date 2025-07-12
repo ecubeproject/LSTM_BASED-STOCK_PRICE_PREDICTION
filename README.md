@@ -1,4 +1,3 @@
-# LSTM_BASED-STOCK_PRICE_PREDICTION
 ```markdown
 # LSTM-Based Stock Price Forecasting App
 
@@ -83,9 +82,9 @@ To deploy your own:
 
 ## Contact
 
-Created by **\[Your Name]**
-[your.email@example.com](mailto:your.email@example.com)
-[LinkedIn](https://linkedin.com/in/your-profile)
+Created by **\Tejas Desai**
+[Email](mailto:aimldstejas@gmail.com)
+[LinkedIn](https://www.linkedin.com/in/tejasddesaiindia/)
 
 ---
 
@@ -93,9 +92,4 @@ Created by **\[Your Name]**
 
 This project is licensed under the MIT License.
 
-```
-
----
-
-Would you like me to generate this as a downloadable `README.md` file or push it into your GitHub-ready folder structure?
 ```
