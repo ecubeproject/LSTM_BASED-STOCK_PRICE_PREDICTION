@@ -1,49 +1,46 @@
-```markdown
-# LSTM-Based Stock Price Forecasting App
-
-This Streamlit app predicts future stock prices using a Recurrent Neural Network (RNN) with Long Short-Term Memory (LSTM) layers. It is trained on historical stock data for Apple Inc. (AAPL), and allows users to experiment with different model hyperparameters and visualize the results.
+Here is your complete `README.md` file with the **file structure image embedded correctly** while keeping everything else unchanged:
 
 ---
 
-## Live Demo
+````markdown
+# LSTM-Based Stock Price Prediction
 
-[Click to launch app on Streamlit Cloud](https://share.streamlit.io/your-username/lstm-stock-app/main/streamlit_lstm_app_modified.py)
-
----
-
-## Model Overview
-
-- **Model Type**: LSTM-based RNN
-- **Target**: Forecasting future stock prices using historical `Close` prices
-- **Best Hyperparameters** (preloaded on launch):
-  - `window_size = 30`
-  - `lstm_units = 50`
-  - `batch_size = 16`
-  - `dropout = 0.0`
-  - `optimizer = adam`
+This project leverages a Long Short-Term Memory (LSTM) neural network to predict future stock prices based on historical time series data. It includes hyperparameter tuning, experiment tracking with Weights & Biases (W&B), and a deployable Streamlit application.
 
 ---
 
-## Features
+## 🚀 Project Features
 
-- Hyperparameter tuning using interactive widgets
-- Real-time evaluation metrics:
-  - MAE, MAPE, RMSE, Train Loss, Validation Loss
--  Visualizations:
-  - Training vs Validation Loss
-  - Actual vs Predicted Stock Prices
-
----
-## File Structure
-
-![File Structure](https://raw.githubusercontent.com/ecubeproject/LSTM_BASED-STOCK_PRICE_PREDICTION/main/file_structure.png)
-
+- LSTM-based time series forecasting
+- Hyperparameter tuning using W&B Sweeps
+- Experiment tracking with W&B (offline and online modes)
+- Streamlit app for interactive prediction and visualization
+- Pretrained model for immediate demo
+- Easy deployment on Streamlit Community Cloud
 
 ---
 
-## Requirements
+## 📁 File Structure
 
-Install dependencies locally using:
+![File Structure](https://raw.githubusercontent.com/ecubeproject/LSTM_BASED-STOCK_PRICE_PREDICTION/main/structure.png)
+
+---
+
+## 📊 Sample Evaluation Metrics
+
+| Metric       | Value    |
+|--------------|----------|
+| RMSE         | 3.90     |
+| MAE          | 2.95     |
+| MAPE (%)     | 1.63     |
+| Train Loss   | 0.00065  |
+| Val Loss     | 0.00091  |
+
+---
+
+## 🧪 Dependencies
+
+Install using:
 
 ```bash
 pip install -r requirements.txt
@@ -51,36 +48,44 @@ pip install -r requirements.txt
 
 ---
 
-## Running Locally
+## 💻 Running the App Locally
 
 ```bash
 streamlit run streamlit_lstm_app_modified.py
 ```
 
----
-
-## Deployment
-
-This app is deployed on [Streamlit Community Cloud](https://streamlit.io/cloud).
-
-To deploy your own:
-
-1. Fork or clone this repo
-2. Push your version to GitHub
-3. Deploy via Streamlit Cloud → **New App**
+You can modify hyperparameters like `window_size`, `batch_size`, `lstm_units`, `optimizer`, and `dropout` directly from the UI.
 
 ---
 
-## Contact
+## 🌐 Deploy on Streamlit Community Cloud
 
-Created by **\Tejas Desai**
-[Email](mailto:aimldstejas@gmail.com)
-[LinkedIn](https://www.linkedin.com/in/tejasddesaiindia/)
+1. Push code to a public GitHub repo.
+2. Go to [Streamlit Community Cloud](https://streamlit.io/cloud).
+3. Click “New App”.
+4. Connect your repo and choose `streamlit_lstm_app_modified.py` as the app entry point.
+5. Add `best_model.h5`, `M3-AAPL.csv`, and `requirements.txt` to repo.
+6. Deploy!
 
 ---
 
-## License
+## 📌 Notes
 
-This project is licensed under the MIT License.
+* This project uses **offline mode** for W\&B experiment tracking. Enable online logging by removing `wandb.init(mode='offline')`.
+* Model training results and sweeps can be found in the `wandb/` directory.
+* The pretrained model is already saved as `best_model.h5` and loaded on app start.
 
+---
+
+## 🧠 Author
+
+**aimldstejas**
+
+Connect via [GitHub](https://github.com/ecubeproject) for more ML projects.
+
+```
+
+---
+
+Let me know if you'd like this saved as a `.md` file or want a PDF export too.
 ```
