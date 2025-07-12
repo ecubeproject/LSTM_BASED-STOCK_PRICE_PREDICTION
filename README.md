@@ -53,26 +53,6 @@ You can modify hyperparameters like `window_size`, `batch_size`, `lstm_units`, `
 
 ---
 
-## 🌐 Deploy on Streamlit Community Cloud
-
-1. Push code to a public GitHub repo.
-2. Go to [Streamlit Community Cloud](https://streamlit.io/cloud).
-3. Click “New App”.
-4. Connect your repo and choose `streamlit_lstm_app_modified.py` as the app entry point.
-5. Ensure `best_model.h5`, `M3-AAPL.csv`, and `requirements.txt` are in your repo.
-6. Deploy!
-
----
-
-## 📌 Notes
-
-* This project uses **offline mode** for W&B experiment tracking.  
-* To enable online logging, remove `mode='offline'` from `wandb.init()`.  
-* All sweep and training artifacts are saved inside the `wandb/` directory.  
-* The app loads a pretrained model (`best_model.h5`) on start for quick testing.
-
----
-
 ## 🧠 Author
 
 **aimldstejas**
