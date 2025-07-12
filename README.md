@@ -22,7 +22,7 @@ This project leverages a Long Short-Term Memory (LSTM) neural network to predict
 
 ## 📁 File Structure
 
-![File Structure](https://raw.githubusercontent.com/ecubeproject/LSTM_BASED-STOCK_PRICE_PREDICTION/main/structure.png)
+![File Structure](https://raw.githubusercontent.com/ecubeproject/LSTM_BASED-STOCK_PRICE_PREDICTION/main/file_structure.png)
 
 ---
 
