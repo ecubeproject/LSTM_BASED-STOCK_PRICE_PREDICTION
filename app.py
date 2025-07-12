@@ -30,7 +30,7 @@ st.title("LSTM-Based Stock Price Predictor")
 # ------------------ Load and preprocess data ------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("M3-AAPL.csv")
+    df = pd.read_csv("data/M3-AAPL.csv")
     df['Date'] = pd.to_datetime(df['Date'])
     df.set_index('Date', inplace=True)
     data = df[['Close']]
