@@ -1,60 +1,66 @@
-# LSTM-Based Stock Price Prediction
+# LSTM-Based Stock Price Predictor
 
-This project leverages a Long Short-Term Memory (LSTM) neural network to predict future stock prices based on historical time series data. It includes hyperparameter tuning, experiment tracking with Weights & Biases (W&B), and a deployable Streamlit application.
+Welcome to the **LSTM Stock Price Predictor** hosted on [Hugging Face Spaces](https://huggingface.co/spaces/minusquare/lstm-stock-price-predictor).  
+This interactive Streamlit app predicts future stock prices using a Long Short-Term Memory (LSTM) neural network trained on historical time series data.
 
 ---
 
-## 🚀 Project Features
+## Key Features
 
 - LSTM-based time series forecasting  
-- Hyperparameter tuning using W&B Sweeps  
-- Experiment tracking with W&B (offline and online modes)  
-- Streamlit app for interactive prediction and visualization  
-- Pretrained model for immediate demo  
-- Easy deployment on Streamlit Community Cloud
+- Interactive Streamlit UI with slider-controlled hyperparameters  
+- Reproducible training with adjustable epochs, window size, batch size, dropout, etc.  
+- Live visualization of training & validation loss  
+- Real-time prediction vs actual price plotting  
+- Automatically loads pretrained model for demo on app launch
 
 ---
 
-## 📁 File Structure
+## App Directory Structure
 
 ![File Structure](https://raw.githubusercontent.com/ecubeproject/LSTM_BASED-STOCK_PRICE_PREDICTION/main/file_structure.png)
 
 ---
 
-## 📊 Sample Evaluation Metrics
+---
+
+## 🔬 Sample Evaluation Metrics
 
 | Metric       | Value    |
 |--------------|----------|
-| RMSE         | 3.90     |
-| MAE          | 2.95     |
-| MAPE (%)     | 1.63     |
-| Train Loss   | 0.00065  |
-| Val Loss     | 0.00091  |
+| RMSE         | ~3.90    |
+| MAE          | ~2.95    |
+| Train Loss   | ~0.00065 |
+| Val Loss     | ~0.00091 |
 
 ---
 
-## 🧪 Dependencies
+##  Try it Out
 
-Install using:
+Launch the app:  
+👉 [Open in Hugging Face Spaces](https://huggingface.co/spaces/minusquare/lstm-stock-price-predictor)
 
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## 💻 Running the App Locally
-
-```bash
-streamlit run streamlit_lstm_app_modified.py
-```
-
-You can modify hyperparameters like `window_size`, `batch_size`, `lstm_units`, `optimizer`, and `dropout` directly from the UI.
+You can change hyperparameters on the left sidebar and click **Run** to retrain the model.
 
 ---
 
-## 🧠 Author
+##  Author
 
-**aimldstejas**
+Built by **Tejas Desai**  
+Connect via [GitHub](https://github.com/ecubeproject) for more AI/ML projects.
 
-Connect via [GitHub](https://github.com/ecubeproject) for more ML projects.
+---
+
+## Tech Stack
+
+- Python, TensorFlow/Keras
+- Streamlit for interactive UI
+- Docker (for custom environment on HF)
+- Hugging Face Spaces for deployment
+
+---
+
+## 💬 Note
+
+This app runs fully in the browser on CPU. For best performance and reproducibility, use the recommended defaults or pretrained model (loaded on app launch).
+
