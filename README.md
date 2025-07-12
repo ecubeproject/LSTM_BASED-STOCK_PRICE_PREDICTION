@@ -36,7 +36,7 @@ This Streamlit app predicts future stock prices using a Recurrent Neural Network
 ---
 ## File Structure
 
-![File Structure](https://raw.githubusercontent.com/ecubeproject/LSTM_BASED-STOCK_PRICE_PREDICTION/main/structure.png)
+![File Structure](https://raw.githubusercontent.com/ecubeproject/LSTM_BASED-STOCK_PRICE_PREDICTION/main/file_structure.png)
 
 
 ---
