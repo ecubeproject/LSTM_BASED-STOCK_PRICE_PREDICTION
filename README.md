@@ -34,19 +34,10 @@ This Streamlit app predicts future stock prices using a Recurrent Neural Network
   - Actual vs Predicted Stock Prices
 
 ---
-
 ## File Structure
 
-```
+![File Structure](https://raw.githubusercontent.com/ecubeproject/LSTM_BASED-STOCK_PRICE_PREDICTION/main/structure.png)
 
-lstm-stock-app/
-├── best\_model.h5                   # Pretrained best model
-├── M3-AAPL.csv                     # Historical stock price data (2019–2024)
-├── streamlit\_lstm\_app\_modified.py # Main Streamlit app
-├── requirements.txt               # Python dependencies
-└── README.md                      # Project documentation
-
-````
 
 ---
 
