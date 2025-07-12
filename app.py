@@ -1,4 +1,3 @@
-
 # app.py
 
 import streamlit as st
@@ -8,7 +7,6 @@ import matplotlib.pyplot as plt
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import LSTM, Dense, Dropout
 from tensorflow.keras.optimizers import Adam, RMSprop
-from tensorflow.keras.models import load_model
 from sklearn.preprocessing import MinMaxScaler
 from sklearn.metrics import mean_squared_error, mean_absolute_error
 
@@ -30,7 +28,7 @@ st.title("LSTM-Based Stock Price Predictor")
 # ------------------ Load and preprocess data ------------------
 @st.cache_data
 def load_data():
-    df = pd.read_csv("data/M3-AAPL.csv")
+    df = pd.read_csv("data/M3-AAPL.csv")  # Modified path
     df['Date'] = pd.to_datetime(df['Date'])
     df.set_index('Date', inplace=True)
     data = df[['Close']]
@@ -87,7 +85,7 @@ if st.button("Run Model"):
 
     # Plot 1: Training vs Validation Loss
     st.subheader("Training vs Validation Loss")
-    fig1, ax1 = plt.subplots(figsize=(4, 2))
+    fig1, ax1 = plt.subplots(figsize=(5, 3))
     ax1.plot(history.history['loss'], label="Training Loss")
     ax1.plot(history.history['val_loss'], label="Validation Loss")
     ax1.set_xlabel("Epochs")
@@ -97,7 +95,7 @@ if st.button("Run Model"):
 
     # Plot 2: Actual vs Predicted Prices
     st.subheader("Actual vs Predicted Stock Prices")
-    fig2, ax2 = plt.subplots(figsize=(4, 2))
+    fig2, ax2 = plt.subplots(figsize=(5, 3))
     ax2.plot(y_actual, label="Actual Price")
     ax2.plot(y_pred, label="Predicted Price")
     ax2.set_xlabel("Time")
